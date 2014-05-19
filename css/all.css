@@ -41,13 +41,21 @@ input [type="email"], input [type="tel"], input[type="search"], input[type="text
 	margin: 0 auto; 
     width: 100%; 
     position: relative;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-repeat: no-repeat;
 }
 .voice-bg { 
     background: url(../images/bg-heading-1.jpg) 50% 0 fixed; 
     height: auto;  
     margin: 0 auto; 
     width: 100%; 
-    position: relative; 
+    position: relative;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-repeat: no-repeat; 
 }
 .mobile-bg { 
     background: url(../images/bg-heading-2.jpg) 50% 0 fixed; 
@@ -55,6 +63,10 @@ input [type="email"], input [type="tel"], input[type="search"], input[type="text
     margin: 0 auto; 
     width: 100%; 
     position: relative;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-repeat: no-repeat;
 }
 #header {padding:13px 0 99px;}
 .logo {
