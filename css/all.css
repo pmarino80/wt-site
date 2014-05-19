@@ -1,3 +1,6 @@
+/* @override 
+	http://pmarino80.github.io/wt-site/css/all.css */
+
 html,
 body{height:100%;}
 #wrapper{
@@ -33,6 +36,26 @@ input [type="email"], input [type="tel"], input[type="search"], input[type="text
 	max-width:1000px;
 }
 .container > #content {padding:0 17.4% 62px;}
+.intro { 
+	background: url(../images/bg-header.jpg) 0% 0 fixed;
+	margin: 0 auto; 
+    width: 100%; 
+    position: relative;
+}
+.voice-bg { 
+    background: url(../images/bg-heading-1.jpg) 50% 0 fixed; 
+    height: auto;  
+    margin: 0 auto; 
+    width: 100%; 
+    position: relative; 
+}
+.mobile-bg { 
+    background: url(../images/bg-heading-2.jpg) 50% 0 fixed; 
+    height: auto;
+    margin: 0 auto; 
+    width: 100%; 
+    position: relative;
+}
 #header {padding:13px 0 99px;}
 .logo {
 	float:left;
@@ -98,7 +121,6 @@ input [type="email"], input [type="tel"], input[type="search"], input[type="text
 .intro {
 	height:100%;
 	margin-top:-104px;
-	position:relative;
 	z-index:2;
 	padding:104px 0 0;
 	text-align:center;

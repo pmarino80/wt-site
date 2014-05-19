@@ -23,6 +23,31 @@
 			document.querySelector('head').appendChild(msViewportStyle)
 		}
 	</script>
+	
+	<script src="" type="text/javascript">
+	$(document).ready(function(){
+	   // cache the window object
+	   $window = $(window);
+	 
+	   $('section[data-type="background"]').each(function(){
+	     // declare the variable to affect the defined data-type
+	     var $scroll = $(this);
+	                     
+	      $(window).scroll(function() {
+	        // HTML5 proves useful for helping with creating JS functions!
+	        // also, negative value because we're scrolling upwards                             
+	        var yPos = -($window.scrollTop() / $scroll.data('speed')); 
+	         
+	        // background position
+	        var coords = '50% '+ yPos + 'px';
+	 
+	        // move the background
+	        $scroll.css({ backgroundPosition: coords });    
+	      }); // end window scroll
+	   });  // end section function
+	}); // close out script
+	</script>
+	
 </head>
 <body>
 	<div id="wrapper">
@@ -60,7 +85,7 @@
 						</div>
 					</div>
 				</div>
-				<img src="images/bg-header.jpg" alt="" class="bg">
+<!--				<img src="images/bg-header.jpg" alt="" class="bg">-->
 			</div>
 			<main id="main" role="main">
 				<section class="content-section">
@@ -80,9 +105,9 @@
 					</div>
 				</section>
 				<section class="content-section">
-					<div class="heading">
+					<div class="heading voice-bg">
 						<h1><a href="#">Voice Solutions</a></h1>
-						<img src="images/bg-heading-1.jpg" alt="" class="bg">
+						<!--<img src="images/bg-heading-1.jpg" alt="" class="bg">-->
 					</div>
 					<div class="container">
 						<div class="inner">
@@ -115,9 +140,9 @@
 					</div>
 				</section>
 				<section class="content-section">
-					<div class="heading">
+					<div class="heading mobile-bg">
 						<h1><a href="#">Mobile Solutions</a></h1>
-						<img src="images/bg-heading-2.jpg" alt="" class="bg">
+						<!--<img src="images/bg-heading-2.jpg" alt="" class="bg">-->
 					</div>
 					<div class="container">
 						<div class="inner">
