@@ -68,6 +68,17 @@ input [type="email"], input [type="tel"], input[type="search"], input[type="text
     -o-background-size: cover;
     background-repeat: no-repeat;
 }
+.mobile {
+	background: url(../images/bg-header-2.jpg) 50% 0% fixed;
+	height: auto;
+	margin: 0 auto; 
+	width: 100%; 
+	position: relative;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-repeat: no-repeat;
+}
 #header {padding:13px 0 99px;}
 .logo {
 	float:left;
